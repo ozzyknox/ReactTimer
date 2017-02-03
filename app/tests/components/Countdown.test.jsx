@@ -25,16 +25,6 @@ describe('Countdown', () => {
             }, 1001);
         });
 
-        // it('should set state to stopped after countdown complete', (done) => {
-        //     var countdown = TestUtils.renderIntoDocument(<Countdown/>);
-        //     countdown.handleSetCountdown(3);
-
-        //     setTimeout(() => {
-        //         expect(countdown.state.clockStatus).toBe('stopped');
-        //         done();
-        //     }, 3001);
-        // });
-
         it('should never set state.count to less than 0', (done) => {
             var countdown = TestUtils.renderIntoDocument(<Countdown/>);
             countdown.handleSetCountdown(1);
